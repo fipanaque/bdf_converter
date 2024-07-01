@@ -85,17 +85,6 @@ print(events1)
 annotations1 = mne.annotations_from_events(events1,sfreq=256) #Convert an event array into an Annotations object.
 raw1.set_annotations(annotations1)
 
-#### Open 3rd file
-
-# In[10]:
-
-#PATH_2 = r"C:\\Users\\_s2030535\\Documents\\data\\s0658\\02_session2\\03_sleep_recording\\"
-#PATH_2 = os.path.join(PATH, _subject, "0{0}_session{0}".format(_session), "03_sleep_recording")
-#file_name= PATH_2+ "/{0}_1.bdf".format(_subject)
-#raw2 = mne.io.read_raw_bdf(file_name)
-
-#raw2.resample(new_sfreq)
-
 ##### Concatenating raw files
 
 # In[58]:
